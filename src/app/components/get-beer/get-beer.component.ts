@@ -4,9 +4,9 @@ import { Subscription } from 'rxjs/Subscription';
 import { GET_BEER } from 'app/reducers/beer.reducer';
 
 @Component({
-  selector: 'app-get-beer-button',
-  templateUrl: './get-beer-button.component.html',
-  styleUrls: ['./get-beer-button.component.css'],
+  selector: 'app-get-beer',
+  templateUrl: './get-beer.component.html',
+  styleUrls: ['./get-beer.component.css'],
 })
 export class GetBeerComponent implements OnInit, OnDestroy {
   private beerSub: Subscription;
