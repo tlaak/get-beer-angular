@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { GetBeerButtonComponent } from './components/get-beer-button/get-beer-button.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GetBeerButtonComponent
   ],
   imports: [
     BrowserModule
