@@ -1,5 +1,10 @@
 # Get Beer
 
+This is a simple demo application to showcase how to use Redux state and Effects in Angular 5.
+
+The data api is [Punk APIv2](https://punkapi.com/documentation/v2). It doesn't
+currently need any API key, but limits the number of requests to 3600 per hour.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
 
 ## Development server
