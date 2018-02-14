@@ -8,7 +8,7 @@ import { GET_BEER } from 'app/reducers/beer.reducer';
   templateUrl: './get-beer-button.component.html',
   styleUrls: ['./get-beer-button.component.css'],
 })
-export class GetBeerButtonComponent implements OnInit, OnDestroy {
+export class GetBeerComponent implements OnInit, OnDestroy {
   private beerSub: Subscription;
 
   public beers: Beer[];

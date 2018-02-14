@@ -5,14 +5,14 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { GetBeerButtonComponent } from './components/get-beer-button/get-beer-button.component';
+import { GetBeerComponent } from './components/get-beer/get-beer.component';
 import { environment } from '../environments/environment';
 import { beerReducer } from './reducers/beer.reducer';
 import { BeerService } from 'app/services/beer.service';
 import { BeerEffects } from 'app/effects/beer.effects';
 
 @NgModule({
-  declarations: [AppComponent, GetBeerButtonComponent],
+  declarations: [AppComponent, GetBeerComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
