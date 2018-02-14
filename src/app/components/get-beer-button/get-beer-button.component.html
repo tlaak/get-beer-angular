@@ -1,3 +1,11 @@
 <div>
   <button type="button" (click)="getBeer($event)">Get Beer!</button>
+  <div *ngIf="isLoading">
+    <p>Fetching beer... be patient!</p>
+  </div>
+  <div *ngIf="beers">
+    <ol>
+      <li *ngFor="let beer of beers">{{beer.name}} – {{beer.tagline}}</li>
+    </ol>
+  </div>
 </div>
