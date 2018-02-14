@@ -1,10 +1,7 @@
 // Place your settings in this file to overwrite default and user settings.
 {
   "editor.formatOnSave": true,
-  "prettier.semi": true,
   "tslint.enable": true,
-  "prettier.jsonEnable": [],
-  "prettier.trailingComma": "all",
   "search.exclude": {
     "**/node_modules": true
   }
