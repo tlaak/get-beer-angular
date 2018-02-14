@@ -9,6 +9,7 @@ import { GetBeerButtonComponent } from './components/get-beer-button/get-beer-bu
 import { environment } from '../environments/environment';
 import { beerReducer } from './reducers/beer.reducer';
 import { BeerService } from 'app/services/beer.service';
+import { BeerEffects } from 'app/effects/beer.effects';
 
 @NgModule({
   declarations: [AppComponent, GetBeerButtonComponent],
