@@ -20,7 +20,6 @@ export class GetBeerComponent implements OnInit, OnDestroy {
     this.beerSub = this.store
       .select('beers')
       .subscribe((beerState: BeerState) => {
-        console.log(beerState);
         this.beers = beerState.beers;
         this.isLoading = beerState.isLoading;
       });

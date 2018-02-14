@@ -7,7 +7,6 @@ export class BeerService {
   constructor(private http: HttpClient) {}
 
   getBeer() {
-    console.log('getting beer');
     const beerApiEndpoint = `${environment.apiEndpoint}/beers`;
     return this.http.get(beerApiEndpoint);
   }
