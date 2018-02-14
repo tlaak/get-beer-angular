@@ -7,17 +7,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { GetBeerButtonComponent } from './components/get-beer-button/get-beer-button.component';
 import { environment } from '../environments/environment';
+import { beerReducer } from './reducers/beer.reducer';
 import { BeerService } from 'app/services/beer.service';
 
 @NgModule({
   declarations: [AppComponent, GetBeerButtonComponent],
   imports: [
     BrowserModule,
-    StoreModule.forRoot([]),
     HttpClientModule,
     EffectsModule.forRoot([BeerEffects]),
+    StoreModule.forRoot({ beers: beerReducer }),
     StoreDevtoolsModule.instrument({
-      maxAge: 50, // Retains last 25 states
+      maxAge: 50, // Retains last 50 states
       logOnly: environment.production, // Restrict extension to log-only mode
     }),
   ],
