@@ -6,12 +6,13 @@ describe('GetBeerButtonComponent', () => {
   let component: GetBeerButtonComponent;
   let fixture: ComponentFixture<GetBeerButtonComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ GetBeerButtonComponent ]
+  beforeEach(
+    async(() => {
+      TestBed.configureTestingModule({
+        declarations: [GetBeerButtonComponent],
+      }).compileComponents();
     })
-    .compileComponents();
-  }));
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(GetBeerButtonComponent);

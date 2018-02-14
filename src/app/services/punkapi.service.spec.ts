@@ -5,11 +5,14 @@ import { PunkapiService } from './punkapi.service';
 describe('PunkapiService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [PunkapiService]
+      providers: [PunkapiService],
     });
   });
 
-  it('should be created', inject([PunkapiService], (service: PunkapiService) => {
-    expect(service).toBeTruthy();
-  }));
+  it(
+    'should be created',
+    inject([PunkapiService], (service: PunkapiService) => {
+      expect(service).toBeTruthy();
+    })
+  );
 });
