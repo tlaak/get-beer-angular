@@ -1,3 +1,9 @@
+/* SystemJS module definition */
+declare var module: NodeModule;
+interface NodeModule {
+  id: string;
+}
+
 interface ActionWithPayload<T> {
   type: string;
   payload: T;
