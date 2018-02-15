@@ -14,7 +14,7 @@ import { AppComponent } from './app.component';
 })
 class MockGetBeerComponent {}
 
-fdescribe('AppComponent', () => {
+describe('AppComponent', () => {
   beforeEach(
     async(() => {
       TestBed.configureTestingModule({
