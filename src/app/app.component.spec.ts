@@ -1,13 +1,28 @@
+import { Component } from '@angular/core';
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-describe('AppComponent', () => {
+
+/**
+ * <app-get-beer> is a child of app.component
+ * You should to mock it instead of importing the real component.
+ * Without mocking you would have to define all child component
+ * dependencies such as store, reducers etc in the TestBed configuration.
+ */
+@Component({
+  selector: 'app-get-beer',
+  template: '',
+})
+class MockGetBeerComponent {}
+
+fdescribe('AppComponent', () => {
   beforeEach(
     async(() => {
       TestBed.configureTestingModule({
-        declarations: [AppComponent],
+        declarations: [AppComponent, MockGetBeerComponent],
       }).compileComponents();
     })
   );
+
   it(
     'should create the app',
     async(() => {
@@ -16,6 +31,7 @@ describe('AppComponent', () => {
       expect(app).toBeTruthy();
     })
   );
+
   it(
     `should have as title 'app'`,
     async(() => {
@@ -24,6 +40,7 @@ describe('AppComponent', () => {
       expect(app.title).toEqual('app');
     })
   );
+
   it(
     'should render title in a h1 tag',
     async(() => {
@@ -31,7 +48,7 @@ describe('AppComponent', () => {
       fixture.detectChanges();
       const compiled = fixture.debugElement.nativeElement;
       expect(compiled.querySelector('h1').textContent).toContain(
-        'Welcome to app!'
+        'Welcome to the Get Beer app!'
       );
     })
   );
