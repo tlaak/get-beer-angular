@@ -11,9 +11,9 @@ import { BeerService } from 'app/services/beer.service';
 export class BeerEffects {
   constructor(private actions$: Actions, private beerService: BeerService) {}
 
-  // Listen for the 'LOGIN' action
+  // Listen to the 'GET_BEER' action
   @Effect()
-  login$: Observable<Action> = this.actions$.pipe(
+  getBeer$: Observable<Action> = this.actions$.pipe(
     ofType('GET_BEER'),
     mergeMap(action =>
       this.beerService
