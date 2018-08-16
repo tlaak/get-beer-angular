@@ -7,22 +7,20 @@ describe('GetBeerComponent', () => {
   let component: GetBeerComponent;
   let fixture: ComponentFixture<GetBeerComponent>;
 
-  beforeEach(
-    /**
-     * This component is subscribing to the @ngrx store. You need to use the
-     * StoreModule and define the name for the store in TestBed configuration
-     */
-    async(() => {
-      TestBed.configureTestingModule({
-        imports: [
-          StoreModule.forRoot({
-            beers: combineReducers(beerReducer),
-          }),
-        ],
-        declarations: [GetBeerComponent],
-      }).compileComponents();
-    })
-  );
+  beforeEach(/**
+   * This component is subscribing to the @ngrx store. You need to use the
+   * StoreModule and define the name for the store in TestBed configuration
+   */
+  async(() => {
+    TestBed.configureTestingModule({
+      imports: [
+        StoreModule.forRoot({
+          beers: combineReducers(beerReducer),
+        }),
+      ],
+      declarations: [GetBeerComponent],
+    }).compileComponents();
+  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(GetBeerComponent);

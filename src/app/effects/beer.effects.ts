@@ -15,12 +15,10 @@ export class BeerEffects {
   getBeer$: Observable<Action> = this.actions$.pipe(
     ofType('GET_BEER'),
     mergeMap(action =>
-      this.beerService
-        .getBeer()
-        .pipe(
-          map(beer => ({ type: 'GOT_BEER', payload: beer })),
-          catchError(() => of({ type: 'FAILED_TO_GET_BEER' }))
-        )
+      this.beerService.getBeer().pipe(
+        map(beer => ({ type: 'GOT_BEER', payload: beer })),
+        catchError(() => of({ type: 'FAILED_TO_GET_BEER' }))
+      )
     )
   );
 }
