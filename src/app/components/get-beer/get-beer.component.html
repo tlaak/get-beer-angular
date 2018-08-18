@@ -5,7 +5,10 @@
   </div>
   <div *ngIf="beers" class="get-beer__beers">
     <ol class="get-beer__beers-list">
-      <li *ngFor="let beer of beers" class="get-beer__beers-list-item">{{beer.name}} – {{beer.tagline}}</li>
+      <li *ngFor="let beer of beers" class="get-beer__beers-list-item">
+        <div class="get-beer__beers-list-item--beer-name">{{beer.name}}</div>
+        <div class="get-beer__beers-list-item--beer-tagline">{{beer.tagline}}</div>
+      </li>
     </ol>
   </div>
 </div>
