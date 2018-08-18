@@ -11,6 +11,8 @@
 }
 
 .get-beer__beers-list {
+  line-height: 1.5;
+  margin: 1rem 0;
 }
 
 .get-beer__beers-list-item {
