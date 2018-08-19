@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+"@angular-builders/custom-webpack@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@angular-builders/custom-webpack/-/custom-webpack-2.2.1.tgz#9c31e127273a1ed6f2e4a2120882429957dfe767"
+  dependencies:
+    lodash "^4.17.10"
+
+"@angular-builders/dev-server@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@angular-builders/dev-server/-/dev-server-2.2.2.tgz#9d76c27253457b3e40c93754a17aa6d1bf2cd935"
+
 "@angular-devkit/architect@0.7.4", "@angular-devkit/architect@^0.7.4":
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.7.4.tgz#c6c65bcf88f03a44fc393db822eda7467e43a2b4"
@@ -233,10 +243,6 @@
   dependencies:
     "@types/jasmine" "*"
 
-"@types/lodash@^4.14.112":
-  version "4.14.116"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.116.tgz#5ccf215653e3e8c786a58390751033a9adca0eb9"
-
 "@types/node@^6.0.46":
   version "6.0.116"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.116.tgz#2f9cd62b4ecc4927e3942e2655c182eecf5b45f1"
@@ -465,12 +471,6 @@ align-text@^0.1.1, align-text@^0.1.3:
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
-
-angular-cli-builders@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/angular-cli-builders/-/angular-cli-builders-2.1.2.tgz#43f8c77e69ca83f131f2c08acdfc66188a5428d4"
-  dependencies:
-    "@types/lodash" "^4.14.112"
 
 ansi-html@0.0.7:
   version "0.0.7"

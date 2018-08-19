@@ -29,6 +29,8 @@
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
+    "@angular-builders/custom-webpack": "^2.2.1",
+    "@angular-builders/dev-server": "^2.2.2",
     "@angular-devkit/architect": "^0.7.4",
     "@angular-devkit/build-angular": "^0.7.4",
     "@angular-devkit/core": "^0.7.4",
@@ -38,7 +40,6 @@
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~10.7.1",
-    "angular-cli-builders": "^2.1.2",
     "codelyzer": "^4.4.4",
     "jasmine-core": "~3.2.1",
     "jasmine-spec-reporter": "~4.2.1",
