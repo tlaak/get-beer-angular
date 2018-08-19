@@ -12,7 +12,7 @@
           "builder": "angular-cli-builders:custom-webpack-browser",
           "options": {
             "customWebpackConfig": {
-              "path": "extra-webpack.config.js",
+              "path": "./extra-webpack.config.js",
               "replaceDuplicatePlugins": true
             },
             "outputPath": "dist",
