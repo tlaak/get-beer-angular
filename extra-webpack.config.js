@@ -1,11 +1,11 @@
-module.exports = throw new Error('FOOBAR') || {
+var postcssPresetEnv = require('postcss-preset-env');
+
+module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,asdfasdf
+        test: /\.css$/,
         use: [
-          'style-loader',
-          { loader: 'css-loader', options: { importLoaders: 1 } },
           {
             loader: 'postcss-loader',
             options: {
