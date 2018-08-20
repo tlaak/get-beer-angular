@@ -1,4 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --color__backround--default: hsl(60, 60%, 90%);
+  --color__text--default: hsl(10, 100%, 25%);
+}
+
 html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -6,8 +11,8 @@ html {
 }
 
 body {
-  background-color: hsl(60, 60%, 90%);
-  color: hsl(10, 100%, 25%);
+  background-color: var(--color__backround--default);
+  color: var(--color__text--default);
   margin: 1rem;
 }
 
