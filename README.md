@@ -7,7 +7,8 @@ currently need any API key, but limits the number of requests to 3600 per hour.
 
 The idea is to implement the same app in Angular, React and Vue to keep my knowledge of these frameworks and libraries up-to-date.
 
-See also: [Get Beer - React edition](https://github.com/tlaak/get-beer-react)
+- [Get Beer - React edition](https://github.com/tlaak/get-beer-react)
+- [Get Beer - Vue edition](https://github.com/tlaak/get-beer-vue)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
 
