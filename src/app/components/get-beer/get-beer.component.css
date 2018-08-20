@@ -4,13 +4,13 @@
 .get-beer__button {
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-color: hsl(180, 30%, 50%);
+  background-color: var(--color__background--button);
   border: none;
-  color: hsl(0, 0%, 100%);
+  color: var(--color__text--button);
   padding: 0.75rem 2rem;
 
   &:hover {
-    background-color: hsl(0, 100%, 50%);
+    background-color: var(--color__background--button-hover);
     box-shadow: 0 0 5px hsl(0, 0%, 50%);
   }
 }

@@ -2,6 +2,11 @@
 :root {
   --color__backround--default: hsl(60, 60%, 90%);
   --color__text--default: hsl(10, 100%, 25%);
+
+  --color__background--button: hsl(180, 30%, 50%);
+  --color__text--button: hsl(0, 0%, 100%);
+
+  --color__background--button-hover: hsl(0, 100%, 50%);
 }
 
 html {
