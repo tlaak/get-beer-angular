@@ -3,18 +3,20 @@
   "compilerOptions": {
     "allowUnusedLabels": false,
     "baseUrl": "src",
+    "downlevelIteration": true,
+    "importHelpers": true,
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es5",
+    "target": "es2015",
     "lib": [
       "es2017",
       "dom"
     ],
-    "module": "es2015"
+    "module": "esnext"
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
