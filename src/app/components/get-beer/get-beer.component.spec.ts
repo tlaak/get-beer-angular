@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { GetBeerComponent } from './get-beer.component';
 import { StoreModule, combineReducers } from '@ngrx/store';
 import { beerReducer } from 'app/reducers/beer.reducer';
@@ -7,7 +7,7 @@ describe('GetBeerComponent', () => {
   let component: GetBeerComponent;
   let fixture: ComponentFixture<GetBeerComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     /**
      * This component is subscribing to the @ngrx store. You need to use the
      * StoreModule and define the name for the store in TestBed configuration
